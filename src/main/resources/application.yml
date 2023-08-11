@@ -14,5 +14,8 @@ spring:
     config:
       server:
         git:
-          uri: <your-config-repo-github-url>
+          uri: https://github.com/zamfirflorin/config-repo
           default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
